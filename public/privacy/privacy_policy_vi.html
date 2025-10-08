@@ -6,39 +6,41 @@
     <title>Chính Sách Bảo Mật - TS IPTV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(to right, #6dd5ed, #2193b0); /* Placeholder gradient, replace with your color */
-            color: #333;
+            background-color: #1E253D; /* Dark background matching app theme */
+            color: #E0E0E0; /* Lighter text for dark background */
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: flex-start;
         }
         .container {
-            background-color: #fff;
+            background-color: #2D3349; /* Slightly lighter dark background for content card */
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             max-width: 900px;
             width: 100%;
             margin: 20px 0;
-            position: relative; /* Needed for absolute positioning of language switcher */
+            position: relative;
         }
         h1, h2 {
-            color: #2193b0; /* Adjust heading color if needed */
-        }
-        p, ul {
+            color: #00B0FF; /* Vibrant blue from app's gradient */
             margin-bottom: 15px;
+        }
+        p, ul, li {
+            margin-bottom: 15px;
+            color: #C0C0C0; /* Slightly darker light text */
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 25px;
         }
         a {
-            color: #2193b0;
+            color: #00E676; /* Vibrant green from app's gradient */
             text-decoration: none;
         }
         a:hover {
@@ -46,77 +48,109 @@
         }
         .language-switcher {
             position: absolute;
-            top: 20px; /* Adjust as needed */
-            right: 20px; /* Adjust as needed */
-            background-color: #f0f0f0;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.9em;
+            top: 20px;
+            right: 20px;
+            background-color: #3A415A;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.85em;
             display: flex;
             gap: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
         .language-switcher a {
-            color: #333;
+            color: #E0E0E0;
             font-weight: bold;
         }
         .language-switcher a.active {
-            color: #2193b0; /* Highlight active language */
-            pointer-events: none; /* Make active language not clickable */
+            color: #00E676;
+            pointer-events: none;
         }
         .footer-copyright {
             margin-top: 30px;
             text-align: center;
-            font-size: 0.85em;
-            color: #666;
+            font-size: 0.8em;
+            color: #888;
+        }
+        strong {
+            color: #FFF;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="language-switcher">
-            <a href="/privacy/privacy_policy_en.html">English</a>
+            <a href="privacy_policy_en.html">English</a>
             <span>|</span>
-            <a href="/privacy/privacy_policy_vi.html" class="active">Tiếng Việt</a>
+            <a href="privacy_policy_vi.html" class="active">Tiếng Việt</a>
         </div>
 
         <h1>Chính Sách Bảo Mật cho TS IPTV</h1>
-        <p>Chính Sách Bảo Mật này mô tả cách TS IPTV ("chúng tôi") thu thập, sử dụng và tiết lộ thông tin của bạn khi bạn sử dụng ứng dụng di động TS IPTV (sau đây gọi là "Ứng dụng").</p>
+        <p>Chính Sách Bảo Mật này ("Chính Sách") mô tả cách TS Software Studio ("chúng tôi") thu thập, sử dụng và tiết lộ thông tin của bạn khi bạn sử dụng ứng dụng di động TS IPTV ("Ứng dụng"). Chúng tôi cam kết bảo vệ quyền riêng tư của bạn và xử lý dữ liệu của bạn một cách minh bạch, tuân thủ các chính sách nền tảng liên quan (ví dụ: Google Play, Apple App Store) và các mạng quảng cáo (ví dụ: Google AdMob, AppLovin).</p>
 
         <h2>1. Thông Tin Chúng Tôi Thu Thập</h2>
-        <h3>Thông tin Cá nhân:</h3>
-        <p>Chúng tôi không thu thập bất kỳ thông tin nhận dạng cá nhân nào từ bạn khi bạn sử dụng ứng dụng TS IPTV. Chúng tôi không yêu cầu bạn đăng ký tài khoản hoặc cung cấp bất kỳ chi tiết cá nhân nào như tên, địa chỉ email, số điện thoại hoặc vị trí của bạn.</p>
-
-        <h3>Thông tin Phi cá nhân:</h3>
-        <p>Chúng tôi có thể thu thập thông tin phi cá nhân về việc sử dụng Ứng dụng của bạn để cải thiện hiệu suất và trải nghiệm người dùng. Điều này có thể bao gồm:</p>
+        <h3>a. Thông tin Cá nhân:</h3>
+        <p>Chúng tôi có thể thu thập thông tin cá nhân mà bạn tự nguyện cung cấp cho chúng tôi, chẳng hạn như địa chỉ email của bạn, khi bạn:</p>
         <ul>
-            <li><strong>Thông tin Thiết bị:</strong> Thông tin về thiết bị di động của bạn, chẳng hạn như kiểu thiết bị, phiên bản hệ điều hành, định danh thiết bị duy nhất và thông tin mạng di động.</li>
-            <li><strong>Dữ liệu Sử dụng:</strong> Thông tin về cách bạn sử dụng Ứng dụng, chẳng hạn như các kênh đã xem, các tính năng đã truy cập, thời lượng sử dụng và báo cáo sự cố. Dữ liệu này được thu thập dưới dạng tổng hợp và ẩn danh và không thể được sử dụng để nhận dạng cá nhân bạn.</li>
+            <li>Liên hệ trực tiếp với chúng tôi để được hỗ trợ hoặc yêu cầu.</li>
+            <li>Đăng ký nhận các thông báo hoặc bản tin cụ thể (nếu các tính năng này được giới thiệu).</li>
+            <li>Tạo một tài khoản người dùng tùy chọn để sử dụng các tính năng cá nhân hóa (nếu các tính năng này được giới thiệu).</li>
+        </ul>
+        <p>Chúng tôi không thu thập các thông tin nhận dạng cá nhân trực tiếp khác từ bạn khi bạn sử dụng ứng dụng TS IPTV, chẳng hạn như tên, số điện thoại hoặc dữ liệu vị trí chính xác.</p>
+
+        <h3>b. Thông tin Phi cá nhân (Thu thập tự động):</h3>
+        <p>Chúng tôi có thể thu thập thông tin phi cá nhân về việc sử dụng Ứng dụng và thiết bị của bạn để cải thiện hiệu suất, cung cấp quảng cáo phù hợp và nâng cao trải nghiệm người dùng. Điều này có thể bao gồm:</p>
+        <ul>
+            <li><strong>Thông tin Thiết bị:</strong> Kiểu thiết bị, phiên bản hệ điều hành, định danh thiết bị duy nhất (ví dụ: ID quảng cáo), địa chỉ IP, thông tin mạng di động, độ phân giải màn hình và cài đặt ngôn ngữ.</li>
+            <li><strong>Dữ liệu Sử dụng:</strong> Thông tin về cách bạn tương tác với Ứng dụng, chẳng hạn như các kênh đã xem, các tính năng đã truy cập, thời lượng sử dụng, báo cáo sự cố và tương tác với quảng cáo. Dữ liệu này chủ yếu được thu thập dưới dạng tổng hợp và ẩn danh nếu có thể, **nhưng cũng có thể được phân tích chi tiết hơn để cá nhân hóa nội dung và trải nghiệm trong Ứng dụng.**</li>
+            <li><strong>Dữ liệu Nhật ký:</strong> Thông tin mà thiết bị của bạn gửi mỗi khi bạn truy cập Ứng dụng của chúng tôi, chẳng hạn như thời gian và ngày truy cập, và các số liệu thống kê khác.</li>
         </ul>
 
         <h2>2. Cách Chúng Tôi Sử Dụng Thông Tin</h2>
-        <p>Thông tin phi cá nhân chúng tôi thu thập chỉ được sử dụng cho các mục đích sau:</p>
+        <p>Thông tin chúng tôi thu thập được sử dụng cho các mục đích sau:</p>
         <ul>
-            <li>Để cung cấp, vận hành và duy trì chức năng của Ứng dụng.</li>
-            <li>Để cải thiện hiệu suất, sự ổn định và trải nghiệm người dùng của Ứng dụng.</li>
-            <li>Để hiểu cách người dùng tương tác với Ứng dụng và xác định các lĩnh vực cần cải thiện.</li>
-            <li>Để theo dõi và phân tích xu hướng và mô hình sử dụng.</li>
-            <li>Để phát hiện, ngăn chặn và giải quyết các vấn đề kỹ thuật.</li>
+            <li>Để cung cấp, vận hành, duy trì và cải thiện chức năng, nội dung và trải nghiệm người dùng của Ứng dụng.</li>
+            <li>Để hiểu và phân tích cách bạn sử dụng Ứng dụng và để phát triển các sản phẩm, dịch vụ, tính năng và chức năng mới.</li>
+            <li>Để theo dõi và phân tích xu hướng và mô hình sử dụng, cũng như để phát hiện, ngăn chặn và giải quyết các vấn đề kỹ thuật.</li>
+            <li>Để cung cấp nội dung và đề xuất được cá nhân hóa trong Ứng dụng, **bao gồm việc điều chỉnh nội dung và tính năng dựa trên tương tác trước đây của bạn trong ứng dụng và bất kỳ tùy chọn nào bạn đã cài đặt rõ ràng.**</li>
+            <li>Để hiển thị quảng cáo có liên quan, như được mô tả trong Mục 3 (Nhà cung cấp dịch vụ bên thứ ba).</li>
+            <li>Để liên lạc với bạn, **bao gồm phản hồi các yêu cầu của bạn và, nếu bạn đã chọn tham gia, gửi cho bạn các bản cập nhật hoặc bản tin liên quan đến Ứng dụng.**</li>
+            <li>Để tuân thủ các nghĩa vụ pháp lý và thực thi các điều khoản dịch vụ của chúng tôi.</li>
         </ul>
-        <p>Chúng tôi không sử dụng thông tin của bạn cho mục đích quảng cáo, tiếp thị hoặc bất kỳ mục đích thương mại nào khác.</p>
 
-        <h2>3. Chia Sẻ và Tiết Lộ Thông Tin</h2>
-        <p>Chúng tôi không chia sẻ, bán, cho thuê hoặc trao đổi thông tin cá nhân hoặc phi cá nhân của bạn với bên thứ ba. Vì chúng tôi không thu thập thông tin cá nhân, nên không có thông tin cá nhân nào để chia sẻ.</p>
-        <p>Dữ liệu sử dụng tổng hợp và ẩn danh có thể được chia sẻ với các nhà cung cấp phân tích của chúng tôi để giúp chúng tôi phân tích việc sử dụng ứng dụng. Dữ liệu này không thể truy ngược lại từng người dùng cụ thể.</p>
+        <h2>3. Nhà Cung Cấp Dịch Vụ Bên Thứ Ba</h2>
+        <p>Chúng tôi sử dụng các dịch vụ bên thứ ba trong Ứng dụng cho mục đích phân tích và quảng cáo. Các nhà cung cấp này có thể thu thập, sử dụng và chia sẻ thông tin của bạn theo chính sách bảo mật riêng của họ. Chúng tôi khuyến khích bạn xem xét chính sách bảo mật của họ để hiểu các thực tiễn dữ liệu của họ.</p>
+
+        <h3>a. Quảng cáo (Google AdMob, AppLovin, v.v.):</h3>
+        <p>Chúng tôi sử dụng các dịch vụ quảng cáo như Google AdMob và AppLovin để phân phát quảng cáo trong Ứng dụng của chúng tôi. Các nhà cung cấp này có thể thu thập và sử dụng định danh thiết bị của bạn (ví dụ: ID quảng cáo) và các thông tin khác về sở thích và việc sử dụng ứng dụng của bạn để cung cấp quảng cáo được cá nhân hóa. Điều này giúp chúng tôi cung cấp Ứng dụng miễn phí.</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> Để biết thêm thông tin về cách Google sử dụng dữ liệu, vui lòng truy cập Chính Sách Bảo Mật của Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a> và cách Google sử dụng thông tin từ các ứng dụng hoặc trang web sử dụng dịch vụ của họ: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">https://policies.google.com/technologies/partner-sites</a>.</li>
+            <li><strong>AppLovin:</strong> Để biết thêm thông tin về các thực tiễn bảo mật của AppLovin, vui lòng truy cập Chính Sách Bảo Mật của họ: <a href="https://legal.applovin.com/" target="_blank">https://legal.applovin.com/</a>.</li>
+            <li>Bạn thường có thể đặt lại ID quảng cáo của thiết bị trong cài đặt thiết bị của mình, điều này có thể hạn chế việc thu thập dữ liệu cá nhân hóa. Bạn cũng có thể từ chối quảng cáo được cá nhân hóa thông qua cài đặt thiết bị của mình (ví dụ: Android: Cài đặt Google > Quảng cáo; iOS: Cài đặt > Quyền riêng tư > Quảng cáo của Apple).</li>
+        </ul>
+
+        <h3>b. Phân tích (Firebase, Google Analytics):</h3>
+        <p>Chúng tôi sử dụng Firebase và Google Analytics để phân tích tổng hợp về việc sử dụng ứng dụng. Các công cụ này giúp chúng tôi hiểu cách người dùng tương tác với Ứng dụng, xác định xu hướng và cải thiện các tính năng. Firebase có thể thu thập dữ liệu như báo cáo sự cố, giám sát hiệu suất và các sự kiện phân tích. Dữ liệu này thường được ẩn danh và tổng hợp, **nhưng cũng có thể được sử dụng để hiểu hành vi người dùng nhằm mục đích cá nhân hóa nội dung và trải nghiệm.**</p>
+        <ul>
+            <li><strong>Google Firebase:</strong> Để biết thêm thông tin về việc xử lý dữ liệu của Firebase, vui lòng truy cập trang Quyền riêng tư và Bảo mật của Firebase của Google: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a>.</li>
+            <li><strong>Google Analytics cho Firebase:</strong> Để biết thêm thông tin về Google Analytics, vui lòng truy cập Chính Sách Bảo Mật của Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</li>
+        </ul>
+
+        <h3>c. Nguồn IPTV của bên thứ ba:</h3>
+        <p>Ứng dụng TS IPTV cho phép bạn nhập M3U và Xtream Codes để truy cập nội dung từ các nguồn của bên thứ ba. Chúng tôi không chịu trách nhiệm về các thực tiễn bảo mật hoặc nội dung của các dịch vụ bên thứ ba này. Chúng tôi khuyến khích bạn xem xét chính sách bảo mật của bất kỳ nhà cung cấp bên thứ ba nào mà bạn truy cập nội dung thông qua Ứng dụng.</p>
 
         <h2>4. Bảo Mật Dữ Liệu</h2>
-        <p>Chúng tôi cam kết bảo vệ an ninh thông tin của bạn. Mặc dù chúng tôi không thu thập dữ liệu cá nhân nhạy cảm, chúng tôi thực hiện các biện pháp kỹ thuật và tổ chức hợp lý để bảo vệ thông tin phi cá nhân chúng tôi thu thập khỏi truy cập, sử dụng hoặc tiết lộ trái phép.</p>
+        <p>Chúng tôi thực hiện các biện pháp kỹ thuật và tổ chức hợp lý được thiết kế để bảo vệ thông tin chúng tôi thu thập khỏi truy cập, sử dụng, thay đổi hoặc phá hủy trái phép. Tuy nhiên, không có phương pháp truyền tải qua Internet hoặc phương pháp lưu trữ điện tử nào an toàn 100%.</p>
 
-        <h2>5. Liên Kết và Dịch Vụ Của Bên Thứ Ba</h2>
-        <p>Ứng dụng TS IPTV cho phép bạn nhập các tệp M3U và Xtream Codes để truy cập nội dung từ các nguồn của bên thứ ba. Chúng tôi không chịu trách nhiệm về các thực tiễn bảo mật hoặc nội dung của các dịch vụ bên thứ ba này. Chúng tôi khuyến khích bạn xem lại chính sách bảo mật của bất kỳ nhà cung cấp bên thứ ba nào mà bạn truy cập nội dung thông qua Ứng dụng.</p>
-        <p>Một số nhà cung cấp nội dung có thể sử dụng cookie hoặc các công nghệ theo dõi khác. Chính sách bảo mật này không áp dụng cho các thực tiễn của các bên thứ ba mà chúng tôi không sở hữu hoặc kiểm soát.</p>
+        <h2>5. Quyền Riêng Tư Của Trẻ Em</h2>
+        <p>Ứng dụng của chúng tôi không hướng đến các cá nhân dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin nhận dạng cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn là cha mẹ hoặc người giám hộ và bạn biết rằng con bạn đã cung cấp thông tin cá nhân cho chúng tôi, vui lòng liên hệ với chúng tôi để chúng tôi có thể thực hiện hành động thích hợp.</p>
 
-        <h2>6. Quyền Riêng Tư Của Trẻ Em</h2>
-        <p>Ứng dụng của chúng tôi không hướng đến các cá nhân dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin nhận dạng cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn là cha mẹ hoặc người giám hộ và bạn biết rằng con mình đã cung cấp thông tin cá nhân cho chúng tôi, vui lòng liên hệ với chúng tôi để chúng tôi có thể thực hiện các hành động cần thiết.</p>
+        <h2>6. Lựa Chọn và Quyền Của Bạn</h2>
+        <p>Bạn có thể có các quyền nhất định liên quan đến thông tin cá nhân của mình, tùy thuộc vào quyền tài phán của bạn. Vì chúng tôi thu thập rất ít hoặc không có dữ liệu cá nhân trực tiếp, các yêu cầu trực tiếp về quyền truy cập, chỉnh sửa hoặc xóa dữ liệu thường không áp dụng cho dữ liệu chúng tôi trực tiếp kiểm soát. Đối với dữ liệu được thu thập bởi các nhà cung cấp quảng cáo hoặc phân tích bên thứ ba, vui lòng tham khảo chính sách bảo mật tương ứng của họ để biết chi tiết về cách thực hiện quyền của bạn.</p>
+        <ul>
+            <li>Bạn có thể kiểm soát quảng cáo được cá nhân hóa thông qua cài đặt thiết bị của mình (ví dụ: đặt lại ID quảng cáo của bạn hoặc từ chối cá nhân hóa quảng cáo).</li>
+            <li>**Nếu chúng tôi thu thập địa chỉ email của bạn, bạn có thể có quyền truy cập, cập nhật hoặc yêu cầu xóa nó bằng cách liên hệ với chúng tôi.**</li>
+        </ul>
 
         <h2>7. Thay Đổi Chính Sách Bảo Mật Này</h2>
         <p>Chúng tôi có thể cập nhật Chính Sách Bảo Mật của mình theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách đăng Chính Sách Bảo Mật mới trên trang này. Bạn nên xem lại Chính Sách Bảo Mật này định kỳ để biết bất kỳ thay đổi nào. Các thay đổi đối với Chính Sách Bảo Mật này có hiệu lực khi chúng được đăng trên trang này.</p>
